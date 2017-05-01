@@ -1,4 +1,4 @@
-# Shouter
+# DevShouts
 
 Twitter like clone with micro-posts.
 
