@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'users/show'
+
   root to: "static_pages#home"
 
   # static pages
@@ -9,4 +11,7 @@ Rails.application.routes.draw do
 
   # signup / sign in
   get "signup"  => 'registrations#new'
+
+  # users
+  resources :users, only: [:show]
 end
